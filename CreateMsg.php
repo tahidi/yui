@@ -1,5 +1,4 @@
 <?php
-
 header("Content-Type:text/html; charset=utf-8");
 
 //載入DB
@@ -28,10 +27,10 @@ $entityManager->flush();
 
 if ($message != null) {
     echo "新增留言成功\n";
-    echo '<meta http-equiv=REFRESH CONTENT=2;url=list_msgs.php>';
+    echo '<meta http-equiv=REFRESH CONTENT=2;url=ShowMsgs.php>';
 } else {
     echo '您留言輸入不完全!';
 //回到留言頁面
-    echo '<meta http-equiv=REFRESH CONTENT=2;url=list_msgs.php>';
+    echo '<meta http-equiv=REFRESH CONTENT=2;url=ShowMsgs.php>';
 }
 ?>
